@@ -9,6 +9,9 @@ plugins {
 }
 
 allprojects {
+    group = "org.gradle.casperui"
+    version = "1.0"
+
     apply(plugin = "org.jlleitschuh.gradle.ktlint")
 }
 
