@@ -9,14 +9,14 @@ plugins {
 }
 
 allprojects {
-    group = "org.gradle.casperui"
+    group = "org.gradle.components"
     version = "1.0"
 
     apply(plugin = "org.jlleitschuh.gradle.ktlint")
 }
 
 subprojects {
-    group = "org.gradle.casperui"
+    group = "org.gradle.components"
     version = "1.0"
 
     apply(plugin = "org.jlleitschuh.gradle.ktlint")
