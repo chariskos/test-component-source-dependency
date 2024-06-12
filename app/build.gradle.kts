@@ -52,6 +52,10 @@ composeCompiler {
     enableStrongSkippingMode = true
 }
 
+kapt {
+    correctErrorTypes = true
+}
+
 ktlint {
     android.set(true)
     verbose.set(true)

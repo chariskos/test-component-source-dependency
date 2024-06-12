@@ -63,18 +63,19 @@ composeCompiler {
     enableStrongSkippingMode = true
 }
 
-//kapt {
-//    correctErrorTypes = true
-//}
+kapt {
+    correctErrorTypes = true
+}
 
 dependencies {
     ktlintRuleset(libs.ktlint.rules.compose)
     coreLibraryDesugaring(libs.desugar.jdk.libs)
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.bundles.compose)
+    implementation(libs.bundles.coil)
+    implementation(libs.snapper)
+
+    debugImplementation(libs.androidx.ui.tooling)
     testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
 }
