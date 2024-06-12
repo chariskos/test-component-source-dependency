@@ -1,0 +1,72 @@
+#built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Windows thumbnail db
+Thumbs.db
+
+# OSX files
+.DS_Store
+
+# Android Studio
+*.iml
+.idea
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+build/
+.navigation
+captures/
+output.json 
+
+#NDK
+obj/
+.externalNativeBuild
+
+*.keystore
+*.swp
+*.orig
+*.log
+
+!debug.keystore
+
+target
+seed.txt
+map.txt
+
+libs/me-mobile-client*.jar
+libs/me-mobile-widgets*.jar
+
+*~
+*.changelog
+.ant-targets-build.xml
+
+# Fabric created dir
+true
+
+# Credentials file
+checkout-mobile-order-*.json
+
+app/*Prod
+
+# Keystore files
+keystores/*
+
+# Releases
+app/*Prod
+app/*/release
+
+#kotlin
+/.kotlin/sessions/*
